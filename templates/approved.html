@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco GKM - Resultado da Avaliação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Banco GKM </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/valuation">Avaliação de Salário</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/loan">Empréstimos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/contato">Contato</a>
+              </li>               
+          </ul>
+      </div>
+  </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Avaliação Aprovada</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Parabéns! Seu empréstimo foi aprovado.</h5>
+                        <p class="card-text">Você pode pegar emprestado até  {{ valor_maximo_formatado }} com um prazo máximo de 24 meses.</p>
+                        <a href="/loan?salario={{ salario }}" class="btn btn-primary">Pedir Empréstimo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
