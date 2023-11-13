@@ -14,6 +14,7 @@ Neste projeto, os alunos criarão uma calculadora financeira em Python que ajuda
 - A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações mensais e o custo total do empréstimo.
 
 ## como rodar o projeto localmente: 
+- pip freeze > requirements.txt
 - python3 main.py
 
 ## Sistema feito 
