@@ -1,0 +1,60 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Empréstimo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Banco GKM </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/valuation">Avaliação de Salário</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/loan">Empréstimos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/contato">Contato</a>
+              </li>         
+          </ul>
+      </div>
+  </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Pedido de Empréstimo</h2>
+                <form method="POST" action="{{ url_for('applyloan') }}">
+                    <div class="form-group">
+                        <label for="salario">Salário:</label>
+                        <input type="number" class="form-control" id="salario" name="salario" placeholder="Informe seu salário" value="{{ salario }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor_emprestimo">Valor Desejado:</label>
+                        <input type="number" class="form-control" id="valor_emprestimo" name="valor_emprestimo" placeholder="Informe o valor desejado" min="200" step="1" max="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prazo">Prazo (em meses):</label>
+                        <input type="number" class="form-control" name="prazo" placeholder="Informe o prazo desejado" min="1" max="24" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxzZXJ2aWNlcyUyQyUyQmluY29tZXxlbnwwfHx8fDE2OTg2MjQxNzB8MA&amp;ixlib=rb-4.0.3&amp;auto=format&amp;fit=clip&amp;w=1920&amp;q=100" class="img-fluid" alt="Imagem de exemplo">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
