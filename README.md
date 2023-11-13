@@ -13,6 +13,11 @@ Neste projeto, os alunos criarão uma calculadora financeira em Python que ajuda
 ## Apresentação dos Resultados:
 - A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações mensais e o custo total do empréstimo.
 
-## Sistema feito em Flask do python, usando templates com bootstrap
+## como rodar o projeto localmente: 
+- python3 main.py
 
-## Para produção foi usado uma conta aws com uma instância EC2 com DNS público usando HTTP, sem certificado SSL (SEGURANÇA)
+## Sistema feito 
+- Flask do python, usando templates com bootstrap
+
+## Para produção 
+- foi usado uma conta aws com uma instância EC2 com DNS público usando HTTP, sem certificado SSL (SEGURANÇA)
